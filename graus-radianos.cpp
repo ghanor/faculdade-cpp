@@ -16,7 +16,7 @@ int main()
         {
             float calcular_Seno, valor;
             cin >> valor;
-            calcular_Seno = sin(valor);
+            calcular_Seno = sin(valor * float(M_PI) / 180.0f);
             cout << calcular_Seno << endl;
         }
         else 
@@ -35,14 +35,14 @@ int main()
         {
             float calcular_Cosseno, valor;
             cin >> valor;
-            calcular_Cosseno = cos(valor);
+            calcular_Cosseno = acos(valor * float(M_PI) / 180.0f);
             cout << calcular_Cosseno << endl;
         }
         else 
         {
             float calcular_Cosseno, valor;
             cin >> valor;
-            calcular_Cosseno = acos(valor);
+            calcular_Cosseno = cos(valor);
             cout << calcular_Cosseno << endl;
         }
     }
